@@ -58,8 +58,8 @@
 }
 
 .wrapper {
-    margin-bottom: 31px;
     width: 838px;
+    margin-bottom: 31px;
 }
 
 .navigation-cards a {
@@ -70,8 +70,91 @@
     margin-right: 0;
 }
 
-.list-short {
-    float: right;
-    clear: both;
+.navigation-cards a:hover {
+    color: rgba(70, 163, 88, 1);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid ;
+    transition: 0.1s;
 }
 
+.navigation-cards {
+    float: left;
+}
+
+.list-short {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}   
+
+.card-section:nth-child(n+3) {
+    margin-top: 70px;
+}
+
+.cards {
+    float: left;
+    margin-right: 33px;
+}
+
+.cards:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.image {
+    padding: 31px 4px;
+}
+
+.image-wrapper {
+    background-color: rgba(251, 251, 251, 1);
+    width: 258px;
+    height: 300px;
+}
+
+.text-cards {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 12px;
+}
+
+.price {
+    margin-top: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    color: rgba(70, 163, 88, 1);
+}
+
+.pages {
+    font-size: 0;
+    margin-top: 50px;
+    text-align: right;
+}
+
+.pages p {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    border: 1px solid rgba(61, 61, 61, 1);
+    border-radius: 3px;
+    padding: 9px 12px;
+    margin-right: 10px;
+}
+
+.pages p:last-child {
+    margin-right: 0;
+}
+
+.pages p:active {
+    color: white;
+    background-color: rgba(70, 163, 88, 1);
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.1s;
+}
